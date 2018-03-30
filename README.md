@@ -11,3 +11,9 @@ selenium-standalone start
 Run Tests
 codeceptjs run --steps
 
+Slack Channel
+https://codeceptjs.slack.com/messages/C94G8JXJB/
+
+Generator Function
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+
