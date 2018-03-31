@@ -17,3 +17,9 @@ https://codeceptjs.slack.com/messages/C94G8JXJB/
 Generator Function
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
 
+Generate Page Objects
+codeceptjs gpo
+
+Generate Tests
+codeceptjs gt
+
