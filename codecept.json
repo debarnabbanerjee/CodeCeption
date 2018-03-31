@@ -18,7 +18,8 @@
   "include": {
     "I": "./steps_file.js",
     "reservationPagePage": "./pages/ReservationPage.js",
-    "loginPage": "./pages/login.js"
+    "loginPage": "./pages/login.js",
+    "calendarPage": "./pages/Calendar.js"
   },
   "mocha": {
     "reporterOptions": {

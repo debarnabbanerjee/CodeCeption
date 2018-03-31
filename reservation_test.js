@@ -1,21 +1,15 @@
 
 Feature('My Store Login');
 
-Scenario('Test the booking of Woman TShirts', async (I) => {
-	 I.amOnPage('/');
-	 I.seeTitleEquals('Login - base7');
-	 I.fillField('.content > form:nth-child(1) > input:nth-child(1)', 'banerjed');
-	 I.fillField('.content > form:nth-child(1) > input:nth-child(2)', 'California0!');
-	 I.click('.login-button');
+Scenario('Test the booking of Woman TShirts', async (I, loginPage, calendarPage) => {
+     I.amOnPage('/');
+	 loginPage.doLogin('banerjed','California0!');
 	 I.wait(2);
 	 I.seeTitleEquals('Calendar - base7');
-	 I.wait(2);
-	 I.click('div.item:nth-child(5) > div:nth-child(1) > div:nth-child(1)');
+	 calendarPage.clickReservation();
+     I.wait(2);
 	 I.seeTitleEquals('Reservations - base7');
-	 I.wait(2);
 	 I.seeElement('/html/body/div[1]/div/div[5]/div/div[1]/form/input');
-
-	 I.seeTitleEquals('Reservations - base7');
 	 I.seeElement('/html/body/div[1]/div/div[5]/div/div[1]/form/input');
 
 	 var number = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');
