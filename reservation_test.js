@@ -1,7 +1,7 @@
 
-Feature('My Store Login');
+Feature('To Test the Reservation');
 
-Scenario('Test the booking of Woman TShirts', async (I, loginPage, calendarPage) => {
+Scenario('To Display the proper behaviour of the Reservation Page', async (I, loginPage, calendarPage, reservationPage) => {
      I.amOnPage('/');
 	 loginPage.doLogin('banerjed','California0!');
 	 I.wait(2);
@@ -9,16 +9,15 @@ Scenario('Test the booking of Woman TShirts', async (I, loginPage, calendarPage)
 	 calendarPage.clickReservation();
      I.wait(2);
 	 I.seeTitleEquals('Reservations - base7');
-	 I.seeElement('/html/body/div[1]/div/div[5]/div/div[1]/form/input');
-	 I.seeElement('/html/body/div[1]/div/div[5]/div/div[1]/form/input');
+   //  I.seeElement('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');
 
 	 var number = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');
 	 var client = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[2]');
-	 let dates = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[3]');
-	 let created = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[4]');
-	 let source = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[5]');
-	 let room = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[6]');
-	 let prereservation = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[7]/div');
+	var dates = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[3]');
+	var created = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[4]');
+	var source = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[5]');
+	var room = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[6]');
+	var prereservation = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[7]/div');
 
     console.log('number is ' + number);
     console.log('client is ' + client);
@@ -29,6 +28,7 @@ Scenario('Test the booking of Woman TShirts', async (I, loginPage, calendarPage)
 	console.log('prereservation is ' + prereservation);
 
 	 I.click('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');
+	 //reservationPage.clickOnFirstReservation();
      I.waitForElement('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b', 2);
 
      var clientText = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b');
