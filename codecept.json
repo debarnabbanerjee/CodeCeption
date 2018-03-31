@@ -1,30 +1,33 @@
 {
-  "tests": "./*_test.js",
-  "timeout": 10000,
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
       "url": "https://banerjed.base7.io/login",
       "browser": "chrome",
-	  "restart": false,
-       "windowSize": "maximize",
-       "timeouts": {
-         "script": 60000,
-         "page load": 10000
-       },
-	   "Mochawesome": {
+      "restart": false,
+      "windowSize": "maximize",
+      "timeouts": {
+        "script": 60000,
+        "page load": 10000
+      },
+      "Mochawesome": {
         "uniqueScreenshotNames": "true"
-       }
+      }
     }
   },
   "include": {
-    "I": "./steps_file.js"
+    "I": "./steps_file.js",
+    "reservationPagePage": "./pages/ReservationPage.js"
   },
-  "bootstrap": false,
   "mocha": {
     "reporterOptions": {
-        "reportDir": "output"
+      "reportDir": "output"
     }
   },
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "./*_test.js",
+  "timeout": 10000,
   "name": "codeception"
 }
