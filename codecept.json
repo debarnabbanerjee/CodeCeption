@@ -17,7 +17,8 @@
   },
   "include": {
     "I": "./steps_file.js",
-    "reservationPagePage": "./pages/ReservationPage.js"
+    "reservationPagePage": "./pages/ReservationPage.js",
+    "loginPagePage": "./pages/LoginPage.js"
   },
   "mocha": {
     "reporterOptions": {
