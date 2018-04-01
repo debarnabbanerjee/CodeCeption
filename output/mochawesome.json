@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 2,
-    "tests": 3,
-    "passes": 3,
+    "tests": 4,
+    "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2018-03-31T19:48:31.223Z",
-    "end": "2018-03-31T19:48:46.220Z",
-    "duration": 14997,
-    "testsRegistered": 3,
+    "start": "2018-04-01T13:07:28.863Z",
+    "end": "2018-04-01T13:07:44.205Z",
+    "duration": 15342,
+    "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "b25dcd55-fbdd-4da1-9eb1-0f2f6a4b87ff",
+    "uuid": "35a4a085-15d1-4268-95f7-7149c4543458",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "f45b74bd-54ad-4096-b8ef-b59799ed93fb",
+        "uuid": "d75e4447-8c46-4acf-84a2-0508e2c05700",
         "title": "Login",
         "fullFile": "C:\\Users\\Debar\\codeception\\login_test.js",
         "file": "\\login_test.js",
@@ -37,14 +37,14 @@
             "title": "\"before all\" hook: codeceptjs.beforeSuite",
             "fullTitle": "Login \"before all\" hook: codeceptjs.beforeSuite",
             "timedOut": false,
-            "duration": 3194,
+            "duration": 3148,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "bd0e8303-e37e-4e2b-b594-64d856474af6",
+            "uuid": "e016cb34-b717-4918-8969-074b52d4c434",
             "isHook": true,
             "skipped": false
           },
@@ -59,7 +59,7 @@
             "code": "scenario.setup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "75f12c72-3dce-4c41-bad6-c6a6cc1785f4",
+            "uuid": "38f7c0bb-bb9c-41f1-9129-0d1460a19823",
             "isHook": true,
             "skipped": false
           }
@@ -69,14 +69,14 @@
             "title": "\"after all\" hook: codeceptjs.afterSuite",
             "fullTitle": "Login \"after all\" hook: codeceptjs.afterSuite",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "7115ac53-0be9-4722-b62f-578b6874c2a1",
+            "uuid": "8f858f52-3131-4914-8e93-63dded8088ce",
             "isHook": true,
             "skipped": false
           },
@@ -84,14 +84,14 @@
             "title": "\"after each\" hook: finalize codeceptjs",
             "fullTitle": "Login \"after each\" hook: finalize codeceptjs",
             "timedOut": false,
-            "duration": 19,
+            "duration": 21,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "0832c1e2-a8c8-45dc-ad05-b96f1a4798cf",
+            "uuid": "3d6ced77-535e-4cc7-9579-ebc938f02b15",
             "isHook": true,
             "skipped": false
           }
@@ -101,7 +101,7 @@
             "title": "Postive Login",
             "fullTitle": "Login: Postive Login",
             "timedOut": false,
-            "duration": 3495,
+            "duration": 3451,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -110,7 +110,7 @@
             "code": "(I, loginPage, calendarPage) => {\n    I.amOnPage('/');\n    loginPage.doLogin('banerjed','California0!');\n    I.wait(2);\n    I.seeTitleEquals('Calendar - base7');\n    calendarPage.doLogOut();",
             "err": {},
             "isRoot": false,
-            "uuid": "0c77dfd8-2938-46b3-a814-2b8516d35f20",
+            "uuid": "ff085795-3d02-4bbb-b63e-e0f73c718530",
             "isHook": false,
             "skipped": false
           },
@@ -118,7 +118,7 @@
             "title": "Negative Login",
             "fullTitle": "Login: Negative Login",
             "timedOut": false,
-            "duration": 2985,
+            "duration": 2992,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -127,33 +127,33 @@
             "code": "(I, loginPage) => {\n    I.amOnPage('/');\n    loginPage.doLogin('banerjed1','California0!1');\n    I.wait(2);\n    I.seeTitleEquals('Login - base7');\n    I.see('Invalid Credentials');",
             "err": {},
             "isRoot": false,
-            "uuid": "8553c8e6-c5ff-4090-a19d-874735953ade",
+            "uuid": "a24f2b32-8f8d-426d-add7-244202b43852",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "0c77dfd8-2938-46b3-a814-2b8516d35f20",
-          "8553c8e6-c5ff-4090-a19d-874735953ade"
+          "ff085795-3d02-4bbb-b63e-e0f73c718530",
+          "a24f2b32-8f8d-426d-add7-244202b43852"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 6480,
+        "duration": 6443,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
       },
       {
-        "uuid": "8169dd5c-778a-4653-89b9-cfd1a8151bca",
-        "title": "To Test the Reservation",
+        "uuid": "dab5ed35-08e4-42b0-968a-b2fafbe42b0c",
+        "title": "Reservation Page Tests",
         "fullFile": "C:\\Users\\Debar\\codeception\\reservation_test.js",
         "file": "\\reservation_test.js",
         "beforeHooks": [
           {
             "title": "\"before all\" hook: codeceptjs.beforeSuite",
-            "fullTitle": "To Test the Reservation \"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "Reservation Page Tests \"before all\" hook: codeceptjs.beforeSuite",
             "timedOut": false,
             "duration": 0,
             "pass": false,
@@ -162,13 +162,13 @@
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "a72a6289-cb08-43fc-a58d-b1a334eed9c1",
+            "uuid": "7dd4eccd-1c72-43af-8f8f-cddfeb879d7d",
             "isHook": true,
             "skipped": false
           },
           {
             "title": "\"before each\" hook: codeceptjs.before",
-            "fullTitle": "To Test the Reservation \"before each\" hook: codeceptjs.before",
+            "fullTitle": "Reservation Page Tests \"before each\" hook: codeceptjs.before",
             "timedOut": false,
             "duration": 0,
             "pass": false,
@@ -177,7 +177,7 @@
             "code": "scenario.setup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "15ac2846-6b98-4994-8935-41dbc788264a",
+            "uuid": "6778071b-81ff-48ca-92e8-5b29036208dd",
             "isHook": true,
             "skipped": false
           }
@@ -185,7 +185,7 @@
         "afterHooks": [
           {
             "title": "\"after all\" hook: codeceptjs.afterSuite",
-            "fullTitle": "To Test the Reservation \"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "Reservation Page Tests \"after all\" hook: codeceptjs.afterSuite",
             "timedOut": false,
             "duration": 0,
             "pass": false,
@@ -194,53 +194,71 @@
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "9fa53ae4-5d17-46c1-8354-eae50a54b592",
+            "uuid": "5a8eab77-d71e-4e4f-8739-1d9db0de196a",
             "isHook": true,
             "skipped": false
           },
           {
             "title": "\"after each\" hook: finalize codeceptjs",
-            "fullTitle": "To Test the Reservation \"after each\" hook: finalize codeceptjs",
+            "fullTitle": "Reservation Page Tests \"after each\" hook: finalize codeceptjs",
             "timedOut": false,
-            "duration": 98,
+            "duration": 41,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "b5ce1f81-ff1f-4180-a9cf-89a217c63708",
+            "uuid": "ea78ad90-0873-410b-b02f-eee322811f38",
             "isHook": true,
             "skipped": false
           }
         ],
         "tests": [
           {
-            "title": "To Display the proper behaviour of the Reservation Page",
-            "fullTitle": "To Test the Reservation: To Display the proper behaviour of the Reservation Page",
+            "title": "Reservation Page UI",
+            "fullTitle": "Reservation Page Tests: Reservation Page UI",
             "timedOut": false,
-            "duration": 5121,
+            "duration": 5236,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "async (I, loginPage, calendarPage, reservationPage) => {\n     I.amOnPage('/');\n\t loginPage.doLogin('banerjed','California0!');\n\t I.wait(2);\n\t I.seeTitleEquals('Calendar - base7');\n\t calendarPage.clickReservation();\n     I.wait(2);\n\t I.seeTitleEquals('Reservations - base7');\n   //  I.seeElement('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');\n\t var number = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');\n\t var client = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[2]');\n\tvar dates = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[3]');\n\tvar created = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[4]');\n\tvar source = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[5]');\n\tvar room = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[6]');\n\tvar prereservation = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[7]/div');\n    console.log('number is ' + number);\n    console.log('client is ' + client);\n    console.log('dates is ' + dates);\n    console.log('created is ' + created);\n    console.log('source is ' + source);\n    console.log('roomType is ' + room);\n\tconsole.log('prereservation is ' + prereservation);\n\t reservationPage.verifyReservationPageUI();\n\t reservationPage.clickOnFirstReservationItem();\n\t//I.click('.flex > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1)');\n     // I.waitForElement('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b', 2);\n     //\n     // var clientText = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b');\n     // console.log('Client Text is ' + clientText);\n     // I.see(clientText, {xpath: '/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b'});\n     //\n     // var roomType = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[6]/div[3]/div[2]/table/tbody/tr[1]/td[1]');\n\t // I.see(roomType, {xpath: '/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[6]/div[3]/div[2]/table/tbody/tr[1]/td[1]'});",
+            "code": "async (I, loginPage, calendarPage, reservationPage) => {\n     I.amOnPage('/');\n\t loginPage.doLogin('banerjed','California0!');\n\t I.wait(2);\n\t I.seeTitleEquals('Calendar - base7');\n\t calendarPage.clickReservation();\n     I.wait(2);\n\t I.seeTitleEquals('Reservations - base7');\n\t reservationPage.verifyReservationPageUI();",
             "err": {},
             "isRoot": false,
-            "uuid": "8b097fe7-4477-4ac2-884e-8d174e1abb44",
+            "uuid": "1fe189b3-87a7-4c6b-95e9-3f6a9507fb32",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Test the functionality of the Latest Reservation Item",
+            "fullTitle": "Reservation Page Tests: Test the functionality of the Latest Reservation Item",
+            "timedOut": false,
+            "duration": 284,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "async (I, loginPage, calendarPage, reservationPage) => {\n    var number = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');\n    var client = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[2]');\n    var dates = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[3]');\n    var created = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[4]');\n    var source = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[5]');\n    var room = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[6]');\n    var prereservation = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[7]/div');\n    //I.addMochawesomeContext('simple string');\n    console.log('client is ' + client);\n    console.log('dates is ' + dates);\n    console.log('created is ' + created);\n    console.log('source is ' + source);\n    console.log('roomType is ' + room);\n    console.log('prereservation is ' + prereservation);\n     reservationPage.clickOnFirstReservationItem();\n    //I.click('.flex > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1)');\n    // I.waitForElement('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b', 2);\n    //\n    // var clientText = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b');\n    // console.log('Client Text is ' + clientText);\n    // I.see(clientText, {xpath: '/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b'});\n    //\n    // var roomType = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[6]/div[3]/div[2]/table/tbody/tr[1]/td[1]');\n    // I.see(roomType, {xpath: '/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[6]/div[3]/div[2]/table/tbody/tr[1]/td[1]'});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "dbe22a23-c6cd-4944-b79c-5f991a87a36c",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "8b097fe7-4477-4ac2-884e-8d174e1abb44"
+          "1fe189b3-87a7-4c6b-95e9-3f6a9507fb32",
+          "dbe22a23-c6cd-4944-b79c-5f991a87a36c"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 5121,
+        "duration": 5520,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
