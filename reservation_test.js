@@ -1,7 +1,7 @@
 
 Feature('Reservation Page Tests');
 
-Scenario('Reservation Page UI', async (I, loginPage, calendarPage, reservationPage) => {
+Scenario('Reservation Page UI @UI', async (I, loginPage, calendarPage, reservationPage) => {
      I.amOnPage('/');
 	 loginPage.doLogin('banerjed','California0!');
 	 I.wait(2);
