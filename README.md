@@ -7,9 +7,11 @@ https://codecept.io/quickstart/
 Start Selenium Server
 selenium-standalone start
 
-
 Run Tests
 codeceptjs run --steps
+
+Run Tests with HTML reporting capability
+codeceptjs run --reporter mochawesome
 
 Slack Channel
 https://codeceptjs.slack.com/messages/C94G8JXJB/
@@ -22,4 +24,3 @@ codeceptjs gpo
 
 Generate Tests
 codeceptjs gt
-

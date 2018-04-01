@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 2,
-    "tests": 4,
-    "passes": 4,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2018-04-01T13:07:28.863Z",
-    "end": "2018-04-01T13:07:44.205Z",
-    "duration": 15342,
-    "testsRegistered": 4,
+    "start": "2018-04-01T18:40:28.911Z",
+    "end": "2018-04-01T18:40:47.266Z",
+    "duration": 18355,
+    "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "35a4a085-15d1-4268-95f7-7149c4543458",
+    "uuid": "54d96a0e-6d55-425c-b159-b4761c267499",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "d75e4447-8c46-4acf-84a2-0508e2c05700",
+        "uuid": "8ba6ebe0-1580-40d7-a37a-cb734082f94c",
         "title": "Login",
         "fullFile": "C:\\Users\\Debar\\codeception\\login_test.js",
         "file": "\\login_test.js",
@@ -37,14 +37,14 @@
             "title": "\"before all\" hook: codeceptjs.beforeSuite",
             "fullTitle": "Login \"before all\" hook: codeceptjs.beforeSuite",
             "timedOut": false,
-            "duration": 3148,
+            "duration": 3147,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "e016cb34-b717-4918-8969-074b52d4c434",
+            "uuid": "233f323b-574a-462b-ae2a-428eb6e23a50",
             "isHook": true,
             "skipped": false
           },
@@ -59,7 +59,7 @@
             "code": "scenario.setup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "38f7c0bb-bb9c-41f1-9129-0d1460a19823",
+            "uuid": "6a5c0049-317b-43ca-bb0e-2c396bd7675c",
             "isHook": true,
             "skipped": false
           }
@@ -76,7 +76,7 @@
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "8f858f52-3131-4914-8e93-63dded8088ce",
+            "uuid": "ec768e5a-409c-485f-91fb-27ecf5ae45a2",
             "isHook": true,
             "skipped": false
           },
@@ -91,7 +91,7 @@
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "3d6ced77-535e-4cc7-9579-ebc938f02b15",
+            "uuid": "1a141c5c-bd42-4a19-8c41-161828c31734",
             "isHook": true,
             "skipped": false
           }
@@ -101,7 +101,7 @@
             "title": "Postive Login",
             "fullTitle": "Login: Postive Login",
             "timedOut": false,
-            "duration": 3451,
+            "duration": 3486,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -110,7 +110,7 @@
             "code": "(I, loginPage, calendarPage) => {\n    I.amOnPage('/');\n    loginPage.doLogin('banerjed','California0!');\n    I.wait(2);\n    I.seeTitleEquals('Calendar - base7');\n    calendarPage.doLogOut();",
             "err": {},
             "isRoot": false,
-            "uuid": "ff085795-3d02-4bbb-b63e-e0f73c718530",
+            "uuid": "fe7e77be-019e-47e0-a92d-0f1fc9098dd0",
             "isHook": false,
             "skipped": false
           },
@@ -118,7 +118,7 @@
             "title": "Negative Login",
             "fullTitle": "Login: Negative Login",
             "timedOut": false,
-            "duration": 2992,
+            "duration": 3521,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -127,26 +127,26 @@
             "code": "(I, loginPage) => {\n    I.amOnPage('/');\n    loginPage.doLogin('banerjed1','California0!1');\n    I.wait(2);\n    I.seeTitleEquals('Login - base7');\n    I.see('Invalid Credentials');",
             "err": {},
             "isRoot": false,
-            "uuid": "a24f2b32-8f8d-426d-add7-244202b43852",
+            "uuid": "cc1a078c-caaa-4efd-89a2-b41de3d3c76c",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "ff085795-3d02-4bbb-b63e-e0f73c718530",
-          "a24f2b32-8f8d-426d-add7-244202b43852"
+          "fe7e77be-019e-47e0-a92d-0f1fc9098dd0",
+          "cc1a078c-caaa-4efd-89a2-b41de3d3c76c"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 6443,
+        "duration": 7007,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
       },
       {
-        "uuid": "dab5ed35-08e4-42b0-968a-b2fafbe42b0c",
+        "uuid": "aa3642de-a95d-4e66-9555-92332c007c51",
         "title": "Reservation Page Tests",
         "fullFile": "C:\\Users\\Debar\\codeception\\reservation_test.js",
         "file": "\\reservation_test.js",
@@ -162,7 +162,7 @@
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "7dd4eccd-1c72-43af-8f8f-cddfeb879d7d",
+            "uuid": "68420863-7a8a-4f07-8620-6f1eed21ac7a",
             "isHook": true,
             "skipped": false
           },
@@ -177,7 +177,7 @@
             "code": "scenario.setup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "6778071b-81ff-48ca-92e8-5b29036208dd",
+            "uuid": "eb4e62f9-110b-4273-b7de-a2f31b568d91",
             "isHook": true,
             "skipped": false
           }
@@ -194,7 +194,7 @@
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "5a8eab77-d71e-4e4f-8739-1d9db0de196a",
+            "uuid": "5b851f7d-e579-4c41-9e5e-5b7dcd827e92",
             "isHook": true,
             "skipped": false
           },
@@ -202,24 +202,24 @@
             "title": "\"after each\" hook: finalize codeceptjs",
             "fullTitle": "Reservation Page Tests \"after each\" hook: finalize codeceptjs",
             "timedOut": false,
-            "duration": 41,
+            "duration": 16,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "ea78ad90-0873-410b-b02f-eee322811f38",
+            "uuid": "3af97d2e-da72-4a68-9ef9-03ae389d4fe4",
             "isHook": true,
             "skipped": false
           }
         ],
         "tests": [
           {
-            "title": "Reservation Page UI",
-            "fullTitle": "Reservation Page Tests: Reservation Page UI",
+            "title": "Reservation Page UI @UI",
+            "fullTitle": "Reservation Page Tests: Reservation Page UI @UI",
             "timedOut": false,
-            "duration": 5236,
+            "duration": 5218,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -228,7 +228,24 @@
             "code": "async (I, loginPage, calendarPage, reservationPage) => {\n     I.amOnPage('/');\n\t loginPage.doLogin('banerjed','California0!');\n\t I.wait(2);\n\t I.seeTitleEquals('Calendar - base7');\n\t calendarPage.clickReservation();\n     I.wait(2);\n\t I.seeTitleEquals('Reservations - base7');\n\t reservationPage.verifyReservationPageUI();",
             "err": {},
             "isRoot": false,
-            "uuid": "1fe189b3-87a7-4c6b-95e9-3f6a9507fb32",
+            "uuid": "6109d8e4-1c98-47e5-95f5-f5a720b42a4d",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "First Reservation Details Page UI @UI",
+            "fullTitle": "Reservation Page Tests: First Reservation Details Page UI @UI",
+            "timedOut": false,
+            "duration": 2663,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "async (I, loginPage, calendarPage, reservationPage, reservationDetailsPage) => {\n    reservationPage.storeFirstReservationElements();\n    reservationPage.clickOnFirstReservationItem();\n    I.wait(2);\n    reservationDetailsPage.verifyReservationDetailsPageUI();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "2fa76ff1-c5f3-40dc-bf9f-a12239279c03",
             "isHook": false,
             "skipped": false
           },
@@ -236,29 +253,30 @@
             "title": "Test the functionality of the Latest Reservation Item",
             "fullTitle": "Reservation Page Tests: Test the functionality of the Latest Reservation Item",
             "timedOut": false,
-            "duration": 284,
+            "duration": 0,
             "state": "passed",
-            "speed": "slow",
+            "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "async (I, loginPage, calendarPage, reservationPage) => {\n    var number = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[1]');\n    var client = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[2]');\n    var dates = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[3]');\n    var created = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[4]');\n    var source = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[5]');\n    var room = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[6]');\n    var prereservation = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/table/tbody/tr[3]/td[7]/div');\n    //I.addMochawesomeContext('simple string');\n    console.log('client is ' + client);\n    console.log('dates is ' + dates);\n    console.log('created is ' + created);\n    console.log('source is ' + source);\n    console.log('roomType is ' + room);\n    console.log('prereservation is ' + prereservation);\n     reservationPage.clickOnFirstReservationItem();\n    //I.click('.flex > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1)');\n    // I.waitForElement('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b', 2);\n    //\n    // var clientText = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b');\n    // console.log('Client Text is ' + clientText);\n    // I.see(clientText, {xpath: '/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/span/b'});\n    //\n    // var roomType = await I.grabTextFrom('/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[6]/div[3]/div[2]/table/tbody/tr[1]/td[1]');\n    // I.see(roomType, {xpath: '/html/body/div[1]/div/div[5]/div/div[1]/div[3]/div[6]/div[3]/div[2]/table/tbody/tr[1]/td[1]'});",
+            "code": "async (I, loginPage, calendarPage, reservationPage, reservationDetailsPage) => {",
             "err": {},
             "isRoot": false,
-            "uuid": "dbe22a23-c6cd-4944-b79c-5f991a87a36c",
+            "uuid": "078a0302-8e26-4fdf-ade4-acff4b56b427",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "1fe189b3-87a7-4c6b-95e9-3f6a9507fb32",
-          "dbe22a23-c6cd-4944-b79c-5f991a87a36c"
+          "6109d8e4-1c98-47e5-95f5-f5a720b42a4d",
+          "2fa76ff1-c5f3-40dc-bf9f-a12239279c03",
+          "078a0302-8e26-4fdf-ade4-acff4b56b427"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 5520,
+        "duration": 7881,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
